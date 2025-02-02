@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: #343334;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container .inputs {
+  width: 350px;
+  margin: 20px auto;
+}
+
+.container .inputs input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.container .inputs input::placeholder {
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .inputs button {
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 8px;
+  background-color: #8c9605;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.boxs {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card {
+  width: 350px;
+  /* margin: auto; */
+  background-color: rgba(240, 248, 255, 0.692);
+  border-radius: 8px;
+}
+
+.container .card ul {
+  position: relative;
+  padding: 10px;
+}
+
+.container .card ul::before {
+  position: absolute;
+  content: attr(id);
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 20px;
+  background-color: #8c9605;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card ul li {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.btn {
+  padding: 5px 15px;
+  width: 100px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  border-radius: 9px;
+  background-color: #8c9605;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
